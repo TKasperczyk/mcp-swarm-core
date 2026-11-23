@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-swarm-core"
+version = "0.1.0"
+description = "Shared stdlib-only MCP 2026-07-28, Tasks extension, process-tree, worktree, and JSONL swarm infrastructure"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "TKasperczyk"},
+]
+keywords = ["mcp", "swarm", "async", "parallel", "tasks", "worktree", "jsonl"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/TKasperczyk/mcp-swarm-core"
+Repository = "https://github.com/TKasperczyk/mcp-swarm-core"
+Issues = "https://github.com/TKasperczyk/mcp-swarm-core/issues"
+
+[tool.setuptools]
+packages = ["mcp_swarm_core"]
+
+[tool.setuptools.package-data]
+mcp_swarm_core = ["py.typed"]
